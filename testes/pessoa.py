@@ -12,8 +12,8 @@ class Pessoa:
 	def parar(self):
 		print("A pessoa parou")
 
-p = Pessoa("Gustavo", 33)
-print("Nome: ", p.nome)
-print("idade: ", p.idade)
-p.caminhar()
-p.parar()
+#p = Pessoa("Gustavo", 33)
+#print("Nome: ", p.nome)
+#print("idade: ", p.idade)
+#p.caminhar()
+#p.parar()
