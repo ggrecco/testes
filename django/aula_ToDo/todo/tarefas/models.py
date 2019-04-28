@@ -17,8 +17,8 @@ class Tarefa(models.Model):
     nome = models.CharField(max_length=100, verbose_name='Nome')
     descricao = models.TextField(blank=True, verbose_name='Descrição')
     data_final = models.DateField(verbose_name='Data Final')
-    prioridade = models.CharField(max_length=1, choices=PRIORIDADE_CHOICES, 
-                                                    verbose_name='Prioridade')
+    prioridade = models.CharField(max_length=1, choices=PRIORIDADE_CHOICES,
+                                  verbose_name='Prioridade')
     categoria = models.ForeignKey(Categoria, verbose_name='Categoria')
 
     def __str__(self):
