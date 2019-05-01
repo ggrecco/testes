@@ -18,6 +18,7 @@ def nova_categoria(request):
 		form = CategoriaForm()
 	return render(request, 'tarefas/nova_categoria.html', {'form', form})
 
+
 def nova_tarefa(request):
 	if request.method == 'POST':
 		form = TarefaForm(request.POST)
