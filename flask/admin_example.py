@@ -18,7 +18,14 @@ class Person(db.Model):
     name = db.Column(db.String(30))
 
 
+class Teste(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    teste = db.Column(db.String(30))
+    email = db.Column(db.String(30))
+
+
 admin.add_view(ModelView(Person, db.session))
+admin.add_view(ModelView(Teste, db.session))
 
 if __name__ == '__main__':
     app.run(debug=True)
